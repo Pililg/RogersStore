@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Registro Cliente</title>
+  <link rel="icon" href="img/logo.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery and JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JS and CSS -->
+  <script src="js/index.js"></script>
+  <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(180deg, #33ccff 0%, #6600cc 100%);">
+    <div class="container-fluid">
+      
+      <!-- Logo alineado a la izquierda -->
+      <a class="navbar-brand" href="home.html">
+        <img src="img/imglogo.png" alt="Logo Roger's" style="width: 65px; height: auto;">
+      </a>
+
+      <!-- Botón toggle para móviles -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Contenido del navbar alineado a la derecha -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent1">
+
+        <!-- Menú -->
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Camisas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Camisetas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Busos</a></li>
+        </ul>
+         
+     
+        <!-- Buscador + Íconos -->
+        <div class="d-flex align-items-center ml-lg-3 mt-3 mt-lg-0" style="gap: 10px;">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+          <a href="login.html" class="text-white ml-3"><i class="fas fa-user fa-lg"></i></a>
+          <a href="carrito.html" class="text-white ml-3"><i class="fas fa-shopping-cart fa-lg"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+</body>
+</html>
+    <body>
+            <section class="py-4 text-center">
+    <div class="container">
+      <h1>Registro Cliente</h1>
+    </div>
+  </section>
+        <main class="p-4 d-flex justify-content-center">
+            <div class="card sizeDiv">
+                <div class="card-body">
+                    <form id="form-register" class="pb-4">
+                        <div class="form-group">
+                            <label for="input-id_usuario">Nombre de usuario</label>
+                            <input type="text" class="form-control" id="input-id_usuario" placeholder="Nombre de usuario" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="input-contrasena">Contraseña</label>
+                                <input type="password" class="form-control" id="input-contrasena" placeholder="Contraseña" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="input-contrasena-repeat">Repetir contraseña</label>
+                                <input type="password" class="form-control" id="input-contrasena-repeat" placeholder="Repetir contraseña" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-nombre">Nombre</label>
+                            <input type="text" class="form-control" id="input-nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-apellido">Apellido</label>
+                            <input type="text" class="form-control" id="input-apellido" placeholder="Apellido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-correo">Correo</label>
+                            <input type="text" class="form-control" id="input-correo" placeholder="Correo" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="input-telefono">Telefono</label>
+                            <input type="text" class="form-control" id="input-telefono" placeholder="Telefono" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="input-direccion">Direccion</label>
+                            <input type="text" class="form-control" id="input-direccion" placeholder="Direccion" required>
+                        </div>
+                        <input type="submit" class="btn btn-primary" id="register-btn" value="Registrar usuario" />
+                    </form>
+                    <div id="register-error" class="alert alert-danger d-none" role="alert"></div>
+                    <a href="login.html">¿Ya tienes cuenta? Iniciar sesión</a>
+                </div>
+            </div> 
+        </main>
+    </body>
+</html>

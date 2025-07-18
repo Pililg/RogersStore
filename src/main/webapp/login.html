@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="css/index.css" rel="stylesheet">
+        <link rel="icon" href="img/logo.png">
+        <script src="js/index.js"></script>
+    </head>
+    <div>
+        <!-- Navbar fija arriba -->
+       <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(180deg, #33ccff 0%, #6600cc 100%);">
+  <div class="container-fluid">
+    
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+      <img src="img/imglogo.png" alt="Logo Roger's" style="width: 65px; height: auto ;">
+    </a>
+
+    <!-- Botón toggle para dispositivos móviles -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenido del navbar -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Camisas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Camisetas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Busos</a></li>
+      </ul>
+
+      <!-- Buscador + Íconos -->
+      <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0" style="gap: 10px;">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-primary" type="submit">Buscar</button>
+        </form>
+        <a href="login.html" class="text-white ms-2"><i class="fas fa-user fa-lg"></i></a>
+        <a href="carrito.html" class="text-white ms-2"><i class="fas fa-shopping-cart fa-lg"></i></a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+        <!-- Espaciado para evitar que el navbar tape el contenido -->
+        <div style="margin-top: 10px;"></div>
+   <body>
+  <div class="container py-2">
+    <div class="card my-2">
+      <!-- Fondo azul oscuro externo -->
+      <div class="card" style="background-color: #0000cd;">
+        <!-- Degradado interno -->
+        <div class="card" style="background: linear-gradient(200deg, #33ccff 0%, #6600cc 100%);">
+          <div class="card-body">
+            <div class="row m-2">
+              <!-- Imagen -->
+              <div class="col-md-6 text-center my-auto">
+                <img src="img/bg-login.jpg" alt="Imagen login" class="img-fluid" style="max-height: 300px;">
+              </div>
+
+              <!-- Formulario -->
+              <div class="col-md-6">
+                <h1 class="h4 text-white my-3">Bienvenido</h1>
+                <form id="form-login">
+                  <div class="form-group mb-3">
+                    <input type="text" class="form-control" id="usuario" placeholder="Usuario" required>
+                  </div>
+                  <div class="form-group mb-3">
+                    <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100" id="BTNENTRAR">Entrar</button>
+                  <hr class="bg-white">
+                </form>
+
+                <!-- Enlace de registro -->
+                <a href="register.html" class="text-white">¿No tienes cuenta? Registrarme</a>
+
+                <!-- Alerta de error -->
+                <div id="login-error" class="alert alert-danger d-none" role="alert">
+                  Usuario o contraseña incorrectos
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+                    </html>

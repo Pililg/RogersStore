@@ -1,0 +1,13 @@
+beans\Compra.class
+controller\IProductoController.class
+servlets\ServletUsuarioPedir.class
+controller\IUsuarioController.class
+servlets\PruebaServlet.class
+servlets\ServletProductoListar.class
+servlets\ServletUsuarioRegister.class
+beans\Usuario.class
+controller\UsuarioController.class
+test\OperacionesBD.class
+servlets\ServletUsuarioLogin.class
+connection\DBConnection.class
+controller\ProductoController.class

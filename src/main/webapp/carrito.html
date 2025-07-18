@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="img/logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+   <style>
+    .product-card:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      transform: scale(1.02);
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+<!-- Encabezado Responsive -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(180deg, #33ccff 0%, #6600cc 100%);">
+  <div class="container-fluid">
+    
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+      <img src="img/imglogo.png" alt="Logo Roger's" style="width: 65px; height: auto ;">
+    </a>
+
+    <!-- Botón toggle para dispositivos móviles -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenido del navbar -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Contáctanos</a></li>
+        <li class="nav-item"><a class="nav-link" href="camisas.html">Camisas</a></li>
+        <li class="nav-item"><a class="nav-link" href="camisetas.html">Camisetas</a></li>
+        <li class="nav-item"><a class="nav-link" href="busos.html">Busos</a></li>
+      </ul>
+
+      <!-- Buscador + Íconos -->
+      <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0" style="gap: 10px;">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-primary" type="submit">Buscar</button>
+        </form>
+        <a href="login.html" class="text-white ms-2"><i class="fas fa-user fa-lg"></i></a>
+        <a href="carrito.html" class="text-white ms-2"><i class="fas fa-shopping-cart fa-lg"></i></a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+        <main class="p-4 d-flex flex-column align-items-center">
+            <h1>Historial de Compras</h1>
+
+            <table class="table d-none" id="historial-table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Referencia</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Género</th>
+                        <th scope="col">Estreno</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Devolver</th>
+                    </tr>
+                </thead>
+                <tbody id="historial-tbody">
+                </tbody>
+            </table>
+            <div id="historial-vacio" class="alert alert-info" role="alert">No hay elementos en el historial</div>

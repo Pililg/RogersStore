@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROGER'S</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Icono de la página -->
+    <link rel="icon" href="img/logopeq.png">
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Archivos de estilos y scripts personalizados -->
+     <link rel="icon" href="img/logo.png">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+  
+</head>
+<!-- Encabezado -->
+<div>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(180deg, #33ccff 0%, #6600cc 100%);">
+  <div class="container-fluid">
+    
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+      <img src="img/imglogo.png" alt="Logo Roger's" style="width: 65px; height: auto ;">
+    </a>
+
+    <!-- Botón toggle para dispositivos móviles -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenido del navbar -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contáctanos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Camisas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Camisetas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Busos</a></li>
+      </ul>
+
+      <!-- Buscador + Íconos -->
+      <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0" style="gap: 10px;">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-primary" type="submit">Buscar</button>
+        </form>
+        <a href="login.html" class="text-white ms-2"><i class="fas fa-user fa-lg"></i></a>
+        <a href="carrito.html" class="text-white ms-2"><i class="fas fa-shopping-cart fa-lg"></i></a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<!-- PRODUCTO CON INFO A LA DERECHA -->
+<div class="container mt-5">
+    <div class="row">
+        <!-- Imagen del producto -->
+        <div class="col-md-6 text-center">
+            <img src="img/TITAN.png" alt="Camisa 1" class="img-fluid" style="max-width: 90%;">
+        </div>
+
+        <!-- Info del producto -->
+        <div class="col-md-6">
+            <h4><strong>Camisa Azul</strong></h4>
+            <p class="text-muted">REF: CMC 03424 V1</p>
+
+            <h3 class="text-primary">$60.000 <span style="text-decoration: line-through; color: gray; font-size: 18px;">70.000</span></h3>
+            
+            <!-- Colores -->
+            <p><strong>COLOR</strong></p>
+            <div class="d-flex mb-3">
+                <div class="rounded-circle me-2" style="width: 25px; height: 25px; background-color: #cce0a3;"></div>
+                <div class="rounded-circle me-2" style="width: 25px; height: 25px; background-color: #6699cc;"></div>
+                <div class="rounded-circle me-2" style="width: 25px; height: 25px; background-color: #f3c5e2;"></div>
+            </div>
+
+            <!-- Tallas -->
+            <p><strong>TALLA</strong></p>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+                <button class="btn btn-outline-dark btn-sm" >S</button>
+                <button class="btn btn-outline-dark btn-sm">M</button>
+                <button class="btn btn-outline-dark btn-sm">L</button>
+                <button class="btn btn-outline-dark btn-sm">XL</button>
+                <button class="btn btn-outline-dark btn-sm" >XXL</button>
+            </div>
+
+            <a href="guiatallas.html" class="btn btn-primary mb-2" style="width: 100%; background-color: #002f6c;">Guía de Tallas</a>
+
+            <!-- Botones de compra -->
+            <div class="d-flex mb-2">
+                <button class="btn btn-dark me-2">Cant.</button>
+                <button class="btn btn-warning text-white w-100"><strong>AGREGAR A LA BOLSA DE COMPRAS</strong></button>
+            </div>
+            <button class="btn btn-info text-white w-100"><strong>COMPRAR AHORA</strong></button>
+
+            <!-- Descripción -->
+            <div class="mt-4">
+                <h5><strong>Descripción</strong></h5>
+                <p style="text-align: justify;">
+                   Luce con orgullo el símbolo del Cuerpo de Exploración con esta camiseta negra de alta calidad. El diseño impreso en el pecho presenta el icónico emblema de alas en blanco y azul degradado, símbolo de valentía y libertad del aclamado anime Shingeki no Kyojin (Attack on Titan). Ideal para fans que quieren vestir con estilo y personalidad. Disponible en todas las tallas y confeccionada en algodón suave que brinda máxima comodidad.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <footer class="mt-0 p-0 text-white text-center" style= "background:linear-gradient(180deg, #a84bd2 0%, #00d4ff 100%);">
+    <div class="container">
+        
+        <!-- Redes Sociales -->
+        <div class="mb-0">
+             <a href="https://www.facebook.com/camisasrogers" target="_blank" style="color: #1877f2; text-decoration: none; margin: 20px; display: inline-block; transition: 0.3s ease;"
+         onmouseover="this.style.transform='scale(3.1)'; this.style.color='#fff';"
+         onmouseout="this.style.transform='scale(2)'; this.style.color='#1877f2';">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.instagram.com/camisasrogers?igsh=YjJ5Y2xmamtma20z" target="_blank" style="color: #e1306c;  text-decoration: none; margin: 20px; display: inline-block; transition: 0.3s ease;"
+         onmouseover="this.style.transform='scale(3.1)'; this.style.color='#fff';"
+         onmouseout="this.style.transform='scale(2)'; this.style.color='#e1306c';">
+                <i class="fab fa-instagram"></i>
+            </a>
+             <a href="https://wa.me/6063497320" target="_blank" style="color: #25D366; text-decoration: none; margin: 20px; display: inline-block; transition: 0.3s ease;"
+         onmouseover="this.style.transform='scale(3.1)'; this.style.color='#fff';"
+         onmouseout="this.style.transform='scale(2)'; this.style.color='#25D366';">
+                <i class="fab fa-whatsapp"></i>
+       
+            </a>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="row justify-content-center">
+            
+                <p>Atencion lun-vie 11:00 am a 8:00 pm / Direccion: Calle 74 B sur Nº13-59</p>                 
+            </div>  
+</footer>
+     <footer class="mt-0 p-0 text-white text-center" style="background:linear-gradient(180deg, #33ccff 0%, #6600cc 100%);">
+  <div class="container">
+    
+    <!-- Contacto dinámico -->
+    <div style="font-size: 15px;">
+      <!-- Teléfono -->
+      <a href="tel:6063497320" 
+         style="color: #fff; text-decoration: none; margin: 0px; display: inline-block; transition: 0.3s ease;"
+         onmouseover="this.style.transform='scale(1.1)'; this.style.color='#0000FF';"
+         onmouseout="this.style.transform='scale(1)'; this.style.color='#fff';">
+        📱 <strong>Llámanos:</strong> 606 3497320
+      </a><br>
+
+      <!-- Correo -->
+      <a href="mailto:camisasrogers@gmail.com"
+         style="color: #fff; text-decoration: none; margin: 0px; display: inline-block; transition: 0.3s ease;"
+         onmouseover="this.style.transform='scale(1.1)'; this.style.color='#0000FF';"
+         onmouseout="this.style.transform='scale(1)'; this.style.color='#fff';">
+        📧 <strong>Email:</strong> camisasrogers@gmail.com
+      </a><br>
+
+      <!-- Envíos -->
+      <p class="mt-0">🚚 <strong>Envíos a todo el país</strong></p>
+    </div>
+
+    <!-- Derechos -->
+    <p class="mt-10 mb-3">&copy; 2025 <strong>Camisas Roger's</strong>. Todos los derechos reservados.</p>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>     
+    </body>
+</html>
+

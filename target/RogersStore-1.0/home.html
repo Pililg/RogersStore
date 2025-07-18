@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+              integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+              crossorigin="anonymous" />
+          <link rel="icon" href="img/logo.png">
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/main.css" />
+        <title></title>
+    </head>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(180deg, #33ccff 0%, #6600cc 100%);"> 
+           <a class="navbar-brand d-flex align-items-center" href="home.html">
+               <a class="navbar-brand ml-auto d-flex align-items-center" href="home.html">
+       <img src="img/imglogo.png" alt="Logo Roger's" style="width: 65px; height: auto; margin-left: 650px;"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	    <ul class="navbar-nav ml-auto">
+	      <li class="nav-item active"> <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a> </li>
+	      <li class="nav-item"> <a class="nav-link" href="#">Contactanos</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#">Camisas</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="#">Camisetas</a> </li>
+               <li class="nav-item"> <a class="nav-link" href="#">Busos</a> </li>
+              </ul>
+               <!-- Contenedor de búsqueda + íconos -->
+<div class="d-flex align-items-center justify-content-between" style="gap: 2px;">
+
+  <!-- Buscador -->
+  <form class="form-inline d-flex" style="gap: 5px;">
+    <input class="form-control" type="search" placeholder="Search" aria-label="Ingresar Busqueda">
+    <button class="btn btn-primary" type="submit">Buscar</button>
+  </form>
+
+  <!-- Íconos de usuario y carrito -->
+  <div class="d-flex align-items-center" style="gap: 5px; margin-left: 5px;">
+    <a href="login.html" class="text-white"><i class="fas fa-user fa-lg"></i></a>
+    <a href="carrito.html" class="text-white"><i class="fas fa-shopping-cart fa-lg"></i></a>
+  </div>
+
+</div>
+      </div>      
+  </nav>
+    <body>
+
+        <main class="p-4 d-flex justify-content-center">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Id_producto</th>
+                        <th scope="col" id="ordenar-nombre" data-toogle="tooltip" 
+                            data-placement="top" title="Ordenar por nombre">Nombre
+                            <span class="fas fa-sort" id="icono-ordenar"></span></th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Color</th>
+                        <th scope="col">Talla</th>
+                        <th scope="col">Imagen</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Comprar</th>
+                       
+                    </tr>
+                </thead>
+                <tbody id="producto-tbody">
+
+                </tbody>
+            </table>
+        </main>
+
+    </body>
+</html>
